@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$primary-background-color: #233a95;
+$main-background-color: white;
+$header-font-family: "Inter", sans-serif;
+$text-color: #2bbef9;
+$border-color: #eeebeb;
+$main-text-color: #3e445a;
+$span-color: #71778e;
+$secondary-text-color: #202435;
+$background-color: #f3f3f6;
+$border-color: #ebecf0;
+.head {
+  height: 260px;
+  background-color: teal;
+}
+#content {
+  .text {
+    text-align: center;
+    color: $secondary-text-color;
+    font-family: $header-font-family;
+  }
+  .cards {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    .location {
+      margin-right: 75px;
+      width: 350px;
+    }
+    .phone {
+      width: 350px;
+    }
+    .mail {
+      margin-left: 65px;
+      width: 350px;
+    }
+    .content {
+      height: 200px;
+      background-color: $background-color;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      display: block;
+      align-items: center;
+      text-align: center;
+      i {
+        font-size: 30px;
+        position: absolute;
+        top: 20%;
+        position: relative;
+        color: $primary-background-color;
+      }
+      .txt {
+        font-size: 16px;
+        margin-top: 50px;
+        margin-left: 20px;
+        text-align: center;
+      }
+    }
+  }
+  .send {
+      margin-top: 95px;
+    margin-left: 3.5%;
+    color: $secondary-text-color;
+    width: 1200px;
+    height: 800px;
+    box-shadow: 4px 4px 8px 8px rgba(83, 83, 83, 0.2),
+      0 6px 20px 0 rgba(116, 114, 114, 0.19);
+    .header {
+      text-align: center;
+      padding-top: 35px;
+      margin-bottom: -10px;
+      margin-left: 13%;
+      border-bottom: 1px solid $border-color;
+    }
+  }
+  .form {
+    margin-left: 18%;
+    width: 900px;
+    .form-control {
+      background-color: $background-color !important;
+      border: none;
+      height: 2.875rem;
+    }
+    .message{
+        min-height:120px;
+    }
+    .btn{
+        background-color:#233A95;
+        color: white !important;
+        width: 150px;
+        height: 45px;
+    }
+  }
+}
+
+.coupon {
+  margin-top: 100px;
+  width: 100%;
+  height: 275px;
+  padding-left: 10px;
+  background-color: $primary-background-color;
+  color: white;
+  .content {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    p {
+      color: #dfdfdf;
+      opacity: 0.5;
+    }
+    .form {
+      width: 60%;
+      height: 50px;
+      position: relative;
+      border: none;
+      border-radius: 4px;
+      position: relative;
+    }
+    input[type="submit"] {
+      width: 100px;
+      background-color: #233a95 !important;
+      border-radius: 4px;
+      height: 45px;
+      color: white;
+      border: none;
+      position: absolute;
+      left: -100px;
+      top: 2px;
+      position: relative;
+    }
+    .image {
+      position: absolute;
+      right: 20px;
+    }
+  }
+}
+.info {
+  padding-left: 20px;
+  margin-top: 30px;
+  height: 30px;
+  padding-left: 3%;
+  text-align: center;
+  .img-one {
+    border-left: 0.5px solid $border-color;
+    margin-left: 10px;
+  }
+  i::after {
+    padding-left: 10px;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+  }
+}
+.footer {
+  background: #f7f8fd;
+  height: 260px;
+  padding-left: 5%;
+  .dairy {
+    padding-right: 15px;
+  }
+  h4 {
+    a {
+      color: #202435;
+      font-size: 0.9375rem;
+      font-weight: bolder;
+    }
+  }
+  ul {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: $span-color;
+    }
+    li {
+      margin-top: 5px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+  }
+  .social {
+    margin-top: 150px;
+    .phone {
+      width: 40px;
+      height: 40px;
+      border-top: 2px solid $border-color;
+      border-radius: 50%;
+      text-align: center;
+      img {
+        margin-top: 7px;
+        position: relative;
+      }
+    }
+    .download {
+      height: 100px;
+      span {
+        font-size: 13px;
+        color: $span-color;
+      }
+      img {
+        position: relative;
+        bottom: 23%;
+        left: 3%;
+        cursor: pointer;
+      }
+    }
+    .links {
+      ul {
+        list-style: none;
+        li {
+          display: inline;
+          margin-left: 15px;
+          a {
+            text-decoration: none;
+            color: #233a95;
+          }
+        }
+      }
+    }
+  }
+  span {
+    font-size: 13px;
+    color: #71778e;
+  }
+  .policy {
+    ul {
+      li {
+        display: inline;
+        margin-left: 25px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

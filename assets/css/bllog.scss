@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$primary-background-color: #233a95;
+$main-background-color: white;
+$header-font-family: "Inter", sans-serif;
+$text-color: #2bbef9;
+$border-color: #eeebeb;
+$main-text-color: #3e445a;
+$span-color: #71778e;
+$secondary-text-color: #202435;
+$background-color: #f3f3f6;
+$border-color: #ebecf0;
+header {
+  height: 260px;
+  background-color: teal;
+}
+#main {
+  .img {
+    width: 68%;
+    height: 100%;
+    color: $secondary-text-color;
+    button {
+      width: 120px;
+      height: 50px;
+      background-color: #3b5998;
+    }
+    p {
+      font-size: 17px;
+      font-style: x-small;
+    }
+    i {
+      color: $text-color;
+    }
+    a {
+      text-decoration: none;
+      color: $span-color;
+      font-size: 14px;
+      margin-left: 3px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+  }
+  .fg--search {
+    position: relative;
+    width: 300px;
+    margin-left: 35px;
+  }
+  .fg--search input {
+    width: 100%;
+    height: 50px;
+    padding: 20px 60px 20px 20px;
+    display: block;
+    background: #f3f4f7;
+    border: none;
+    border-radius: 4px;
+  }
+  .fg--search button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px 20px;
+    z-index: 2;
+  }
+  .side {
+    text-align: center;
+    color: $secondary-text-color;
+    margin-left: 35px;
+    p {
+      font-size: 0.9375rem;
+      font-weight: 600px;
+      font-family: $header-font-family;
+    }
+    .content {
+      width: 280px;
+      height: 350px;
+      background-color: rgb(253, 253, 253);
+      border: 1px solid $border-color;
+      p {
+        text-align: left;
+        font-family: "Dosis", sans-serif;
+        font-size: 17px;
+        color: $secondary-text-color !important;
+      }
+      .box {
+       max-width: 110px;
+        height: 30px;
+        border: 1px solid $border-color;
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 5px;
+        a {
+          text-decoration: none;
+          color: black;
+          margin-left: 3px;
+          display: flex;
+          justify-content:center;
+        }
+      }
+      .gif {
+        width: 250px;
+        height: 350px;
+      }
+      .img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+        margin-left: 15px;
+        padding-bottom: 5px;
+      }
+      span {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 15px;
+        font-size: 1.0175em;
+      }
+      .text {
+        position: relative;
+        top: -45px;
+        max-width: 150px;
+        height: 50px;
+        right: -90px;
+        align-items: flex-start;
+      }
+      .social {
+        span {
+          display: flex;
+          justify-content: flex-start;
+          margin-left: 15px;
+        }
+        .button {
+          width: 270px;
+          height: 50px;
+          border: none;
+          border-radius: 4px;
+          text-align: left;
+          cursor: pointer;
+          margin-bottom: 2px;
+          &:hover {
+            opacity: 0.7;
+          }
+          a {
+            text-decoration: none;
+            color: white;
+            margin-left: 5px;
+            display: flex;
+          }
+        }
+        .facebook {
+          background-color: #3b5998;
+          &::after {
+            content: "Facebook";
+            color: white;
+          }
+        }
+        .twitter {
+          background-color: #1da1f2;
+          &::after {
+            content: "Twitter";
+            color: white;
+          }
+        }
+        .pinterest {
+          background-color: #e60023;
+          &::after {
+            content: "Pinterest";
+            color: white;
+          }
+        }
+        .linkedin {
+          background-color: #0077b5;
+          &::after {
+            content: "Linkedin";
+            color: white;
+          }
+        }
+        .reddit {
+          background-color: #ff4500;
+          &::after {
+            content: "Reddit";
+            display: inline-block;
+            color: white;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.coupon {
+  margin-top: 250px;
+  width: 100%;
+  height: 275px;
+  padding-left: 10px;
+  background-color: $primary-background-color;
+  color: white;
+  .content {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    p {
+      color: #dfdfdf;
+      opacity: 0.5;
+    }
+    .form {
+      width: 60%;
+      height: 50px;
+      position: relative;
+      border: none;
+      border-radius: 4px;
+      position: relative;
+    }
+    input[type="submit"] {
+      width: 100px;
+      background-color: #233a95 !important;
+      border-radius: 4px;
+      height: 45px;
+      color: white;
+      border: none;
+      position: absolute;
+      left: -100px;
+      top: 2px;
+      position: relative;
+    }
+    .image {
+      position: absolute;
+      right: 20px;
+    }
+  }
+}
+.info {
+  padding-left: 20px;
+  margin-top: 30px;
+  height: 30px;
+  padding-left: 3%;
+  text-align: center;
+  .img-one {
+    border-left: 0.5px solid $border-color;
+    margin-left: 10px;
+  }
+  i::after {
+    padding-left: 10px;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+  }
+}
+.footer {
+  background: #f7f8fd;
+  height: 260px;
+  padding-left: 5%;
+  .dairy {
+    padding-right: 15px;
+  }
+  h4 {
+    a {
+      color: #202435;
+      font-size: 0.9375rem;
+      font-weight: bolder;
+    }
+  }
+  ul {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: $span-color;
+    }
+    li {
+      margin-top: 5px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+  }
+  .social {
+    margin-top: 150px;
+    .phone {
+      width: 40px;
+      height: 40px;
+      border-top: 2px solid $border-color;
+      border-radius: 50%;
+      text-align: center;
+      img {
+        margin-top: 7px;
+        position: relative;
+      }
+    }
+    .download {
+      height: 100px;
+      span {
+        font-size: 13px;
+        color: $span-color;
+      }
+      img {
+        position: relative;
+        bottom: 23%;
+        left: 3%;
+        cursor: pointer;
+      }
+    }
+    .links {
+      ul {
+        list-style: none;
+        li {
+          display: inline;
+          margin-left: 15px;
+          a {
+            text-decoration: none;
+            color: #233a95;
+          }
+        }
+      }
+    }
+  }
+  span {
+    font-size: 13px;
+    color: #71778e;
+  }
+  .policy {
+    ul {
+      li {
+        display: inline;
+        margin-left: 25px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  height: 260px;
+  background-color: teal;
+}
+
+#login ul {
+  list-style: none;
+}
+
+#login li {
+  display: inline;
+}
+
+#login a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+#login i {
+  position: relative;
+  top: 2px;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#login .home {
+  color: #3e445a;
+}
+
+#login .home:hover {
+  text-decoration: underline;
+}
+
+#login .input-box {
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+#login .input-box .txt {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e3e4e9;
+}
+
+#login .input-box .form {
+  background-color: #f3f4f7 !important;
+  border: none;
+  border-radius: 4px;
+  width: 80%;
+  height: 40px;
+}
+
+#login .input-box .btn {
+  background-color: #233a95;
+  color: white;
+  width: 80px;
+  cursor: pointer;
+}
+
+#login .input-box a {
+  color: #2bbef9;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+}
+
+#login .input-box .register a {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.coupon {
+  margin-top: 100px;
+  width: 100%;
+  height: 275px;
+  padding-left: 10px;
+  background-color: #233a95;
+  color: white;
+}
+
+.coupon .content {
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+.coupon .content p {
+  color: #dfdfdf;
+  opacity: 0.5;
+}
+
+.coupon .content .form {
+  width: 60%;
+  height: 50px;
+  position: relative;
+  border: none;
+  border-radius: 4px;
+  position: relative;
+}
+
+.coupon .content input[type="submit"] {
+  width: 100px;
+  background-color: #233a95 !important;
+  border-radius: 4px;
+  height: 45px;
+  color: white;
+  border: none;
+  position: absolute;
+  left: -100px;
+  top: 2px;
+  position: relative;
+}
+
+.coupon .content .image {
+  position: absolute;
+  right: 20px;
+}
+
+.info {
+  padding-left: 20px;
+  margin-top: 30px;
+  height: 30px;
+  padding-left: 3%;
+  text-align: center;
+}
+
+.info .img-one {
+  border-left: 0.5px solid #e3e4e9;
+  margin-left: 10px;
+}
+
+.info i::after {
+  padding-left: 10px;
+  border-left: 1px solid #e3e4e9;
+  border-right: 1px solid #e3e4e9;
+}
+
+.footer {
+  background: #f7f8fd;
+  height: 260px;
+  padding-left: 5%;
+}
+
+.footer .dairy {
+  padding-right: 15px;
+}
+
+.footer h4 a {
+  color: #202435;
+  font-size: 0.9375rem;
+  font-weight: bolder;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul a {
+  text-decoration: none;
+  color: #71778e;
+}
+
+.footer ul li {
+  margin-top: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer .social {
+  margin-top: 150px;
+}
+
+.footer .social .phone {
+  width: 40px;
+  height: 40px;
+  border-top: 2px solid #e3e4e9;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.footer .social .phone img {
+  margin-top: 7px;
+  position: relative;
+}
+
+.footer .social .download {
+  height: 100px;
+}
+
+.footer .social .download span {
+  font-size: 13px;
+  color: #71778e;
+}
+
+.footer .social .download img {
+  position: relative;
+  bottom: 23%;
+  left: 3%;
+  cursor: pointer;
+}
+
+.footer .social .links ul {
+  list-style: none;
+}
+
+.footer .social .links ul li {
+  display: inline;
+  margin-left: 15px;
+}
+
+.footer .social .links ul li a {
+  text-decoration: none;
+  color: #233a95;
+}
+
+.footer span {
+  font-size: 13px;
+  color: #71778e;
+}
+
+.footer .policy ul li {
+  display: inline;
+  margin-left: 25px;
+}
+
+.footer .policy ul li:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=login.css.map */
