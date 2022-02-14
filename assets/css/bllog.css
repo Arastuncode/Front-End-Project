@@ -54,6 +54,62 @@ header {
   margin-left: 35px;
 }
 
+#main .pages {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main .pages .one {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: #1da1f2;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main .pages .one a {
+  color: white;
+  text-decoration: none;
+}
+
+#main .pages .one a i {
+  color: black;
+  font-size: x-large;
+}
+
+#main .pages .two {
+  background-color: white;
+  color: black;
+}
+
+#main .pages .two a {
+  color: black;
+}
+
+#main .pages .two:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #e9e9e9;
+}
+
 #main .fg--search input {
   width: 100%;
   height: 50px;
@@ -84,9 +140,9 @@ header {
 }
 
 #main .side p {
-  font-size: 0.9375rem;
-  font-weight: 600px;
-  font-family: "Inter", sans-serif;
+  font-family: "Dosis", sans-serif;
+  font-size: 17px;
+  color: #202435;
 }
 
 #main .side .content {
@@ -100,7 +156,7 @@ header {
   text-align: left;
   font-family: "Dosis", sans-serif;
   font-size: 17px;
-  color: #202435 !important;
+  color: #202435;
 }
 
 #main .side .content .box {
@@ -180,6 +236,9 @@ header {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-left: 15px;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  color: #202435;
 }
 
 #main .side .content .social .button {
@@ -253,9 +312,9 @@ header {
 }
 
 .coupon {
-  margin-top: 250px;
+  margin-top: 30px;
   width: 100%;
-  height: 275px;
+  height: 325.262px;
   padding-left: 10px;
   background-color: #233a95;
   color: white;
@@ -269,7 +328,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .coupon .content p {
@@ -279,27 +338,31 @@ header {
 
 .coupon .content .form {
   width: 60%;
-  height: 50px;
+  height: 55px;
   position: relative;
   border: none;
   border-radius: 4px;
   position: relative;
+}
+
+.coupon .content input[type="email"] {
+  height: 60px;
 }
 
 .coupon .content input[type="submit"] {
   width: 100px;
   background-color: #233a95 !important;
-  border-radius: 4px;
-  height: 45px;
+  border-radius: 6px;
+  height: 50px;
   color: white;
   border: none;
   position: absolute;
-  left: -100px;
-  top: 2px;
+  left: -103px;
+  top: 5px;
   position: relative;
 }
 
-.coupon .content .image {
+.coupon .content img {
   position: absolute;
   right: 20px;
 }

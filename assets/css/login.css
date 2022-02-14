@@ -113,16 +113,20 @@ header {
   position: relative;
 }
 
+.coupon .content input[type="email"] {
+  height: 60px;
+}
+
 .coupon .content input[type="submit"] {
   width: 100px;
   background-color: #233a95 !important;
-  border-radius: 4px;
-  height: 45px;
+  border-radius: 6px;
+  height: 50px;
   color: white;
   border: none;
   position: absolute;
-  left: -100px;
-  top: 2px;
+  left: -103px;
+  top: 5px;
   position: relative;
 }
 
