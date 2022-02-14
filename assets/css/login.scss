@@ -100,7 +100,7 @@ header {
       border-radius: 4px;
       position: relative;
     }
-    input[type="email"]{
+    input[type="email"] {
       height: 60px;
     }
     input[type="submit"] {
@@ -122,19 +122,21 @@ header {
   }
 }
 .info {
-  padding-left: 20px;
-  margin-top: 30px;
   height: 30px;
   padding-left: 3%;
   text-align: center;
+  
+  font-family: Inter, sans-serif;
+  .bor {
+    border-right: 1px solid $border-color;
+    padding-right: 5px;
+    
+  }
   .img-one {
-    border-left: 0.5px solid $border-color;
     margin-left: 10px;
   }
   i::after {
     padding-left: 10px;
-    border-left: 1px solid $border-color;
-    border-right: 1px solid $border-color;
   }
 }
 .footer {
@@ -166,14 +168,17 @@ header {
   .social {
     margin-top: 150px;
     .phone {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       border-top: 2px solid $border-color;
       border-radius: 50%;
       text-align: center;
       img {
         margin-top: 7px;
         position: relative;
+      }
+      span{
+        font-size:xx-large;
       }
     }
     .download {
