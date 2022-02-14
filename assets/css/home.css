@@ -1,1 +1,368 @@
-/* No CSS *//*# sourceMappingURL=home.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#header .top-box {
+  width: 100%;
+  height: 35px;
+  background-color: #233a95;
+  color: white;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#header .navbar-collapse {
+  color: #3e445a !important;
+  font-family: Roboto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #eeebeb;
+}
+
+#header .navbar-collapse .list li a:hover {
+  color: #2bbef9 !important;
+  text-decoration: none !important;
+}
+
+#header .navbar-collapse .right-text {
+  margin-top: 13px;
+  border-right: 1px solid #eeebeb;
+}
+
+#header .navbar-collapse .contanct {
+  margin: 10px;
+}
+
+#header .navbar-collapse .contanct a {
+  font-weight: bolder;
+  color: #2bbef9 !important;
+}
+
+#header .navbar-collapse .dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+}
+
+#header .navbar-collapse .dropdown a {
+  text-decoration: none;
+  color: #3e445a !important;
+}
+
+#header .navbar-collapse .dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+#header .navbar-collapse .dropdown li {
+  display: block;
+  float: left;
+  padding: 0.3rem;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+#header .navbar-collapse .dropdown li:hover {
+  cursor: pointer;
+}
+
+#header .navbar-collapse .dropdown ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 1rem;
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-top: 2.85rem;
+  left: 0;
+  display: none;
+}
+
+#header .navbar-collapse .dropdown ul li:hover > ul,
+#header .navbar-collapse .dropdown ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+#header .navbar-collapse .dropdown ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+#header .navbar-collapse .dropdown .arrow-down:hover {
+  color: #2bbef9;
+}
+
+#header .header-center .logo {
+  width: 250px;
+  height: 50px;
+}
+
+#header .header-center .logo span {
+  color: #d4d4d4;
+  font-size: small;
+}
+
+#header .header-center .logo img {
+  width: 85%;
+  height: 100%;
+  cursor: pointer;
+}
+
+#header .header-center .modal-box button {
+  height: 55px !important;
+  width: 150px !important;
+  border: 2px solid #eeebeb;
+  border-radius: 8px;
+  padding: 5px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+#header .header-center .modal-box span {
+  color: #dad6d6;
+  font-size: small;
+}
+
+#header .header-center .modal-box h5 {
+  color: #233a95;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+#header .header-center .modal-box i {
+  position: relative;
+  bottom: 40px;
+  right: -60px;
+  color: #233a95;
+  font-size: small;
+}
+
+#slider {
+  height: 500px;
+}
+
+#slider img {
+  height: 500px;
+}
+
+#slider .btn-left {
+  position: relative;
+  bottom: 20%;
+}
+
+#product-list .products {
+  width: 1300px;
+  height: 500px;
+  border: 1px solid #eeebeb;
+  margin-top: 10px;
+  position: relative;
+}
+
+#product-list .products .first {
+  position: absolute;
+}
+
+#product-list .products .product {
+  height: 300px;
+  width: 205px;
+  border-right: 1px solid #eeebeb;
+  position: absolute;
+}
+
+#product-list .products .product img {
+  height: 150px;
+}
+
+#product-list .products .product .text {
+  text-align: center;
+}
+
+#product-list .products .product img {
+  height: 200px;
+}
+
+.coupon {
+  margin-top: 30px;
+  width: 100%;
+  height: 325.262px;
+  padding-left: 10px;
+  background-color: #233a95;
+  color: white;
+}
+
+.coupon .content {
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+}
+
+.coupon .content p {
+  color: #dfdfdf;
+  opacity: 0.5;
+}
+
+.coupon .content .form {
+  width: 60%;
+  height: 55px;
+  position: relative;
+  border: none;
+  border-radius: 4px;
+  position: relative;
+}
+
+.coupon .content input[type="email"] {
+  height: 60px;
+  width: 400px;
+  position: relative;
+}
+
+.coupon .content button[type="button"] {
+  width: 100px;
+  background-color: #233a95 !important;
+  border-radius: 6px;
+  height: 50px;
+  color: white;
+  border: none;
+  position: absolute;
+  left: 26%;
+  top: 5px;
+}
+
+.coupon .content img {
+  position: relative;
+  top: -218px;
+  right: -50%;
+}
+
+.info {
+  padding-left: 20px;
+  margin-top: 30px;
+  height: 30px;
+  padding-left: 3%;
+}
+
+.info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.info ul li {
+  display: inline;
+  list-style: none;
+}
+
+.info ul img {
+  margin-right: 15px;
+}
+
+.footer {
+  background: #f7f8fd;
+  height: 260px;
+  padding-left: 5%;
+}
+
+.footer .dairy {
+  padding-right: 15px;
+}
+
+.footer h4 a {
+  color: #202435;
+  font-size: 0.9375rem;
+  font-weight: bolder;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul a {
+  text-decoration: none;
+  color: #71778e;
+}
+
+.footer ul li {
+  margin-top: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer .social {
+  margin-top: 150px;
+}
+
+.footer .social .phone {
+  width: 40px;
+  height: 40px;
+  border-top: 2px solid #eeebeb;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.footer .social .phone img {
+  margin-top: 7px;
+  position: relative;
+}
+
+.footer .social .download {
+  height: 100px;
+}
+
+.footer .social .download span {
+  font-size: 13px;
+  color: #71778e;
+}
+
+.footer .social .download img {
+  position: relative;
+  bottom: 23%;
+  left: 3%;
+  cursor: pointer;
+}
+
+.footer .social .links ul {
+  list-style: none;
+}
+
+.footer .social .links ul li {
+  display: inline;
+  margin-left: 15px;
+}
+
+.footer .social .links ul li a {
+  text-decoration: none;
+  color: #233a95;
+}
+
+.footer span {
+  font-size: 13px;
+  color: #71778e;
+}
+
+.footer .policy ul li {
+  display: inline;
+  margin-left: 25px;
+}
+
+.footer .policy ul li:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=home.css.map */
