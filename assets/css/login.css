@@ -115,6 +115,7 @@ header {
 
 .coupon .content input[type="email"] {
   height: 60px;
+  width: 100px;
 }
 
 .coupon .content input[type="submit"] {
@@ -124,10 +125,9 @@ header {
   height: 50px;
   color: white;
   border: none;
-  position: absolute;
-  left: -103px;
-  top: 5px;
   position: relative;
+  right: 17%;
+  margin-top: 5px;
 }
 
 .coupon .content .image {

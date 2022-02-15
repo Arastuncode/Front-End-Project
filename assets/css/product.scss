@@ -16,7 +16,6 @@ header {
 }
 #products {
   background-color: #f7f8fd;
-
   ul {
     list-style: none;
     li {
@@ -32,9 +31,8 @@ header {
   .product-card {
     .card {
       background-color: white;
-      width: 1320px;
-      min-height: 700px;
-      margin-left: 10px;
+      width: 1250px;
+      max-height: 800px;
       .review {
         padding-left: 10px;
         a {
@@ -84,10 +82,21 @@ header {
       }
       .product-image {
         width: 400px;
-
         margin-left: 10%;
         img {
           width: 100%;
+        }
+        .other-images {
+          width: 310px;
+          height: 270px;
+          margin-left: 10%;
+          img {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #233a95;
+            border-radius: 4px;
+            margin-left: 10px;
+          }
         }
       }
       .product-info {
@@ -125,7 +134,6 @@ header {
           height: 40px;
           border-radius: 1.875rem;
           background-color: #233a95 !important;
-          margin-left: 20px;
           a {
             color: white;
             text-decoration: none;
@@ -140,7 +148,7 @@ header {
             width: 150px;
             background-color: transparent !important;
             border: 1px solid $border-color;
-            margin-right: 7%;
+            margin-left: -5px;
             a {
               color: gray;
               text-decoration: none;
@@ -179,7 +187,7 @@ header {
           border-radius: 50%;
           background-color: #edeef5;
           text-align: center;
-          margin-left: 10px;
+          margin-left: 5px;
           i {
             margin-top: 10px;
             color: white;
@@ -219,6 +227,77 @@ header {
               padding: 10px;
             }
           }
+        }
+      }
+    }
+  }
+  .tab-menu {
+    .tab {
+      overflow: hidden;
+      border-bottom: 1px solid $border-color;
+      background-color: white;
+      button {
+        background-color: white;
+        float: left;
+        border: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.5s;
+        font-style: bold;
+        font-family: Inter, sans-serif;
+      }
+    }
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      background-color: white;
+      .text {
+        padding-right: 10px;
+        width: 40%;
+        height: 30px;
+        border: 1.5px solid $border-color;
+        display: inline-block;
+        p {
+          margin-left: 5px;
+        }
+      }
+      .review {
+        .user-info {
+          img {
+            border-radius: 50%;
+            margin-left: 5px;
+          }
+          ul {
+            display: block;
+            margin-left: 3%;
+            margin-top: -1%;
+            li {
+              display: block;
+            }
+          }
+        }
+      }
+      .user-commet {
+        .rate {
+          p{
+            &:hover{
+              color: yellow;
+              i{
+                background-color:yellow;
+              }
+            }
+          }
+          // border-right: 1px solid $border-color;
+          //.fa-star {
+            // background-color: green;
+          //}
+        }
+
+        textarea {
+          height: 200px;
+          width: 100%;
+          background-color: #f3f4f7;
+          border: none;
         }
       }
     }
