@@ -118,6 +118,7 @@ header {
   background: #f3f4f7;
   border: none;
   border-radius: 4px;
+  outline: none;
 }
 
 #main .fg--search button {
@@ -312,12 +313,15 @@ header {
 }
 
 .coupon {
-  margin-top: 100px;
   width: 100%;
-  height: 275px;
-  padding-left: 10px;
+  height: 360px;
   background-color: #233a95;
-  color: white;
+  position: relative;
+}
+
+.coupon img {
+  position: absolute;
+  bottom: 0%;
 }
 
 .coupon .content {
@@ -328,43 +332,54 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 20px;
+  padding-top: 30px;
+  position: absolute;
+  top: 15%;
+  left: 10%;
 }
 
 .coupon .content p {
-  color: #dfdfdf;
-  opacity: 0.5;
+  font-family: "Inter", sans-serif;
+  padding-top: 5px;
+  color: gray;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .coupon .content .form {
-  width: 60%;
-  height: 50px;
-  position: relative;
-  border: none;
-  border-radius: 4px;
-  position: relative;
-}
-
-.coupon .content input[type="email"] {
-  height: 60px;
-}
-
-.coupon .content input[type="submit"] {
-  width: 100px;
-  background-color: #233a95 !important;
-  border-radius: 6px;
-  height: 50px;
   color: white;
-  border: none;
   position: absolute;
-  left: -103px;
-  top: 5px;
+  left: 10%;
+  top: 20%;
   position: relative;
 }
 
-.coupon .content .image {
+.coupon .content .form i {
   position: absolute;
-  right: 20px;
+  top: 28%;
+  left: -7.5%;
+  color: gray;
+  font-size: 25px;
+}
+
+.coupon .content .form .input {
+  width: 470px;
+  height: 70px;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  margin-left: -50px;
+  outline: none;
+}
+
+.coupon .content .form .btn {
+  right: 1%;
+  top: 10%;
+  position: absolute;
+  height: 55px;
+  width: 95px;
+  background-color: #233a95;
+  border: none;
 }
 
 .info {
