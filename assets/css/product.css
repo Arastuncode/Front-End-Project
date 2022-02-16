@@ -221,14 +221,14 @@ header {
   margin-left: 5px;
 }
 
+#products .product-card .card .product-info .links:hover {
+  background-color: transparent;
+  opacity: 0.7;
+}
+
 #products .product-card .card .product-info .links i {
   margin-top: 10px;
   color: white;
-}
-
-#products .product-card .card .product-info .links i:hover {
-  background-color: transparent;
-  opacity: 0.7;
 }
 
 #products .product-card .card .side-info {
@@ -319,12 +319,16 @@ header {
   display: block;
 }
 
-#products .tab-menu .tabcontent .user-commet .rate p:hover {
-  color: yellow;
+#products .tab-menu .tabcontent .user-commet .rate {
+  border-right: 1px solid #e3e4e9;
 }
 
-#products .tab-menu .tabcontent .user-commet .rate p:hover i {
-  background-color: yellow;
+#products .tab-menu .tabcontent .user-commet .rate .fa-star {
+  color: gray;
+}
+
+#products .tab-menu .tabcontent .user-commet .rate .fa-star:hover {
+  color: yellow;
 }
 
 #products .tab-menu .tabcontent .user-commet textarea {
@@ -353,7 +357,7 @@ header {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   width: 21rem;
-  height: 40rem;
+  height: 37rem;
   border-radius: 6px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -367,6 +371,40 @@ header {
   border-radius: 6px;
 }
 
+#products .card-products .hidden-icon {
+  margin-top: 5px;
+}
+
+#products .card-products .hidden-icon a {
+  text-decoration: none;
+  color: black;
+}
+
+#products .card-products .hidden-icon i {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  visibility: hidden;
+  margin-left: 275px;
+  line-height: 35px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 1px solid #e3e4e9;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 5px;
+}
+
+#products .card-products .hidden-icon i:hover {
+  background-color: #13135b;
+  color: white;
+}
+
 #products .card-products:hover .btn {
   visibility: visible !important;
 }
@@ -377,7 +415,7 @@ header {
 
 #products .card-products .card-image {
   width: 90%;
-  height: 70%;
+  height: 7 0%;
   margin-top: 10px;
   margin-left: 5%;
   cursor: pointer;
@@ -451,17 +489,6 @@ header {
   background-color: #233a95;
   border-radius: 30px;
   width: 90%;
-}
-
-#products .card-products .body .hidden-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  visibility: hidden;
-}
-
-#products .card-products .body .hidden-icon i:hover {
-  background-color: blue;
 }
 
 #products .card-products .body .title {

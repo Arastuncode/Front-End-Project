@@ -9,7 +9,7 @@
 });
 */
 
-function openCity(evt, cityName) {
+function openCity(evt, name) {
     var i,tabcontent,tablinks;
     tabcontent =document.getElementsByClassName("tabcontent");
     for (i=0; i<tabcontent.length; i++) {
@@ -20,7 +20,10 @@ function openCity(evt, cityName) {
         tablinks[i].className=tablinks[i].className.replace(".active"," ") ;   
         tablinks[i].style.color = "black";
     }
-    document.getElementById(cityName).style.display="block";
+    document.getElementById(name).style.display="block";
     evt.curreentTarget.className += "active";
     
 }
+$(document).ready(function () {           
+  $('.carousel').carousel();       
+});

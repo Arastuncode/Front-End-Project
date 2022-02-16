@@ -188,13 +188,13 @@ header {
           background-color: #edeef5;
           text-align: center;
           margin-left: 5px;
+          &:hover {
+            background-color: transparent;
+            opacity: 0.7;
+          }
           i {
             margin-top: 10px;
             color: white;
-            &:hover {
-              background-color: transparent;
-              opacity: 0.7;
-            }
           }
         }
       }
@@ -279,20 +279,14 @@ header {
       }
       .user-commet {
         .rate {
-          p {
+          border-right: 1px solid $border-color;
+          .fa-star {
+            color: gray;
             &:hover {
               color: yellow;
-              i {
-                background-color: yellow;
-              }
             }
           }
-          // border-right: 1px solid $border-color;
-          //.fa-star {
-          // background-color: green;
-          //}
         }
-
         textarea {
           height: 200px;
           width: 100%;
@@ -307,10 +301,10 @@ header {
           border: none;
           outline: none;
         }
-        .btn{
-          background-color:#233a95;
+        .btn {
+          background-color: #233a95;
           width: 110px;
-          height:50px;
+          height: 50px;
         }
       }
     }
@@ -323,9 +317,35 @@ header {
     }
     transition: all 0.5s;
     width: 21rem;
-    height: 40rem;
+    height: 37rem;
     border-radius: 6px;
     align-items: center;
+    .hidden-icon {
+      margin-top:5px;
+      a{
+        text-decoration: none;
+        color: black;
+      }
+      i {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        visibility: hidden;
+        margin-left: 275px;
+        line-height: 35px;
+        text-align: center;
+        align-items: center;
+        display: block;
+        transition: all 0.5s;
+        border-radius: 1px solid $border-color;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding-top:5px;
+         &:hover {
+          background-color: rgb(19, 19, 91);
+          color: white;
+        }
+      }
+    }
     &:hover .btn {
       visibility: visible !important;
     }
@@ -334,7 +354,7 @@ header {
     }
     .card-image {
       width: 90%;
-      height: 70%;
+      height: 7 0%;
       margin-top: 10px;
       margin-left: 5%;
       cursor: pointer;
@@ -396,17 +416,6 @@ header {
         border-radius: 30px;
         width: 90%;
       }
-      .hidden-icon {
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        visibility: hidden;
-
-        i:hover {
-          background-color: blue;
-        }
-      }
-
       .title {
         font-size: 13px;
         font-weight: 650;
@@ -420,7 +429,7 @@ header {
   height: 360px;
   background-color: #233a95;
   position: relative;
-  img{
+  img {
     position: absolute;
     bottom: 0%;
   }

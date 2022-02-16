@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  height: 260px;
+  background-color: teal;
+}
+
+#basket-product ul {
+  list-style: none;
+}
+
+#basket-product ul li {
+  display: inline;
+  margin-left: 2px;
+  color: #71778e;
+}
+
+#basket-product .info {
+  width: 900px;
+}
+
+#basket-product .info .second-product {
+  border-bottom: 2px solid #e3e4e9;
+  border-top: 1px solid #e3e4e9;
+}
+
+#basket-product .info img {
+  cursor: pointer;
+  width: 150px;
+  height: 130px;
+}
+
+#basket-product .info ul li {
+  display: inline;
+}
+
+#basket-product .info a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+#basket-product .info i {
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+#basket-product .info .curcile {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #edeef5;
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+}
+
+#basket-product .info .curcile p {
+  font-size: x-large;
+  cursor: pointer;
+}
+
+#basket-product .inputs input[type="text"] {
+  width: 280px;
+  height: 45px;
+  background-color: #dbdcdf;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+}
+
+#basket-product .inputs .btn {
+  width: 150px;
+  height: 45px;
+  background-color: #233a95;
+  border-radius: 4px;
+}
+
+#basket-product .inputs .button {
+  width: 150px;
+  height: 45px;
+  background-color: #f0f0f0;
+  color: #cfcfe6;
+  border-radius: 4px;
+  border: none;
+  margin-left: 31%;
+  opacity: 0.8;
+}
+
+#basket-product .selling-info {
+  height: 450px;
+  margin-left: 15%;
+  border: 1px solid #e3e4e9;
+  width: 400px;
+}
+
+#basket-product .selling-info .price {
+  margin-left: 40%;
+}
+
+#basket-product .selling-info span {
+  font-size: 16px;
+  font-weight: 600px;
+  color: #202435;
+  font-family: Inter, sans-serif;
+}
+
+#basket-product .selling-info .head {
+  width: 80%;
+  border-bottom: 1px solid #e3e4e9;
+}
+
+#basket-product .selling-info .shipping-detail {
+  border: 1px solid #e3e4e9;
+  width: 80%;
+  height: 200px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+#basket-product .selling-info .shipping-detail .shipping {
+  height: 200px;
+  border-right: 1px solid #e3e4e9;
+}
+
+#basket-product .selling-info .shipping-detail .shipping h5 {
+  padding-top: 55%;
+  margin-left: 5px;
+}
+
+#basket-product .selling-info .shipping-detail .detail {
+  line-height: 30px;
+}
+
+#basket-product .selling-info .shipping-detail .detail a {
+  line-height: 100px;
+  margin-left: 7%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-decoration: none;
+  color: #2bbef9;
+}
+
+#basket-product .selling-info .shipping-detail .detail a:hover {
+  text-decoration: underline;
+}
+
+#basket-product .selling-info .total {
+  margin-top: 5%;
+  height: 50px;
+  border-bottom: 1px solid #e3e4e9;
+}
+
+#basket-product .selling-info .total span {
+  margin-left: 45%;
+}
+
+#basket-product .selling-info .total .span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#basket-product .selling-info .btn {
+  width: 90%;
+  height: 50px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+#basket-product .selling-info .btn:hover {
+  opacity: 0.7;
+}
+
+#basket-product .selling-info .btn a {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=cart.css.map */
