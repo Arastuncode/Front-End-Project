@@ -107,15 +107,15 @@
                                 </div>
                                 <div class="social mt-5">
                                     <div class="row">
-                                        <div class="links facebook col-xl-1 col-sm-12"
+                                        <div class="links facebook col-xl-1 col-sm-3"
                                             style="background-color: #3B5998;"><i class="fab fa-facebook-f"></i></div>
-                                        <div class="links twitter col-xl-1 col-sm-12"
-                                            style="background-color: #1DA1F2;"><i class="fab fa-twitter"></i></div>
-                                        <div class="links pinterest col-xl-1 col-sm-12"
+                                        <div class="links twitter col-xl-1 col-sm-3" style="background-color: #1DA1F2;"></div>
+                                            <i class="fab fa-twitter"></i></div>
+                                        <div class="links pinterest col-xl-1 col-sm-3"
                                             style="background-color: #E60023;"><i class="fab fa-pinterest-p"></i></div>
-                                        <div class="links linkedin col-xl-1 col-sm-12"
+                                        <div class="links linkedin col-xl-1 col-sm-3"
                                             style="background-color: #0075B5;"><i class="fab fa-linkedin-in"></i></div>
-                                        <div class="links reddit col-xl-1 col-sm-12" style="background-color: #FF4500;">
+                                        <div class="links reddit col-xl-1 col-sm-3" style="background-color: #FF4500;">
                                             <i class="fab fa-reddit"></i>
                                         </div>
                                         <div class="links whatsapp col-xl-1 col-sm-12"
@@ -124,7 +124,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-sm-12">
+                        <div class="col-xl-2 col-sm-5">
                             <div class="side-info">
                                 <div class="col-xl-3 col-sm-12 covid">
                                     <span>Covid-19 Info: We keep delivering.</span>
@@ -154,11 +154,13 @@
                 <div class="col-12">
                     <div class="tab-menu">
                         <div class="tab">
-                            <button class="tablinks" onclick="openCity(event, '1')">DESCRIPTION</button>
-                            <button class="tablinks" onclick="openCity(event, '2')">ADDITIONAL INFORMATION</button>
-                            <button class="tablinks" onclick="openCity(event, '3')">REVIEWA (1)</button>
+                            <ul class="tabs">
+                                <li class="tab-link current" data-tab="tab-1">DESCRIPTION</li>
+                                <li class="tab-link" data-tab="tab-2">ADDITIONAL INFORMATION</li>
+                                <li class="tab-link" data-tab="tab-3">REVIEWA (1)</li>
+                            </ul>
                         </div>
-                        <div id="1" class="tabcontent  ">
+                        <div id="tab-1" class="tab-content current">
                             <p>Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in
                                 dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit
                                 feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam
@@ -175,7 +177,7 @@
                                 consequat nulla felis pharetra lacus. Duis semper erat mauris, sed egestas purus
                                 commodo vel.</p>
                         </div>
-                        <div id="2" class="tabcontent">
+                        <div id="tab-2" class="tab-content">
                             <div class="text">
                                 <p>Brands</p>
                             </div>
@@ -184,7 +186,7 @@
                             </div>
 
                         </div>
-                        <div id="3" class="tabcontent">
+                        <div id="tab-3" class="tab-content">
                             <div class="container">
                                 <div class="review">
                                     <h6>1 REVIEW FOR ALL NATURAL ITALIAN-STYLE CHICKEN MEATBALLS</h6>
@@ -246,7 +248,7 @@
             </div>
             <div class="col-xl-12">
                 <div class="row">
-                    <div class="col-xl-3 mt-5 mt-5">
+                    <div class="col-xl-3 col-sm-6 mt-5 mt-5">
                         <div class="card-products">
                             <img src="./assets/img/product-image-10-346x310.jpg" class="card-image">
                             <p class="discount"> 19%</p>
@@ -268,7 +270,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 mt-5 mt-5">
+                    <div class="col-xl-3 col-sm-6  mt-5 mt-5">
                         <div class="card-products">
                             <img src="./assets/img/product-image-4-346x310.jpg" class="card-image">
                             <p class="discount"> 26%</p>
@@ -290,7 +292,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3  mt-5">
+                    <div class="col-xl-3 col-sm-6  mt-5">
                         <div class="card-products">
                             <img src="./assets/img/product-image-7-346x310.jpg" class="card-image" alt="...">
                             <p class="discount"> 19%</p>
@@ -312,7 +314,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 mt-5">
+                    <div class="col-xl-3 col-sm-6 mt-5">
                         <div class="card-products">
                             <img src="./assets/img/product-image-45-346x310.jpg" class="card-image">
                             <div class="hidden-icon">
@@ -335,11 +337,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
     </section>
     <div class="coupon">
         <div class="container">
             <div class="row mt-5 mt-5">
-                <div class="col-xl-6 col-sm-12">
+                <div class="col-xl-6 col-sm-6">
                     <div class="content">
                         <span>$20 discount for your first order</span>
                         <h2>Join our newsletter and get...</h2>
@@ -353,7 +356,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-sm-12">
+                <div class="col-xl-2 col-sm-6">
                     <img src="./assets/img/coupon.png" alt="">
                 </div>
             </div>
@@ -362,19 +365,19 @@
     <div class="info">
         <div class="container-md">
             <div class="row mt-5">
-                <div class="col-xl-3 bor col-sm-12">
+                <div class="col-xl-3 bor col-sm-6">
                     <i class="fal fa-glass fa-lg"></i>
                     <span>Everyday fresh products</span>
                 </div>
-                <div class="col-xl-3 bor col-sm-12">
+                <div class="col-xl-3 bor col-sm-6">
                     <img class="img img-one" src="./assets/icons/delivery.png" alt="">
                     <span>Free delivery for order over $70</span>
                 </div>
-                <div class="col-xl-3 bor col-sm-12">
+                <div class="col-xl-3 bor col-sm-6">
                     <i class="fal fa-badge-percent fa-lg"></i>
                     <span>Daily Mega Discounts</span>
                 </div>
-                <div class="col-xl-3 col-sm-12">
+                <div class="col-xl-3 col-sm-6">
                     <img class="img " src="./assets/icons/dollar.png" alt="">
                     <span>Best price on the
                         market</span>
@@ -387,7 +390,7 @@
         <div class="footer">
             <div class="container">
                 <div class="row mt-5">
-                    <div class="col-xl-2 col-sm-12">
+                    <div class="col-xl-2 col-sm-2">
                         <div class="fruits ">
                             <ul>
                                 <h4><a href="">FRUIT & VEGETABLES</a></h4>
@@ -401,7 +404,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-sm-12">
+                    <div class="col-xl-2 col-sm-2">
                         <div class="dairy">
                             <ul>
                                 <h4><a href="#">BREAKFAST & DAIRY</a></h4>
@@ -416,7 +419,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-sm-12">
+                    <div class="col-xl-2 col-sm-2">
                         <div class="dairy">
                             <ul>
                                 <h4><a href="#">MEAT & SEAFOOD</a></h4>
@@ -431,7 +434,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-sm-12">
+                    <div class="col-xl-2 col-sm-2">
                         <div class="dairy">
                             <ul>
                                 <h4><a href="#">BEVERAGES</a></h4>
@@ -447,7 +450,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-sm-12">
+                    <div class="col-xl-2 col-sm-2">
                         <div class="dairy">
                             <ul>
                                 <h4><a href="#">BREADS & BAKERY</a></h4>

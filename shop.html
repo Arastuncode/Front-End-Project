@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products – Bacola – Grocery Market and Food Theme</title>
+    <script src="https://kit.fontawesome.com/edff80f9e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/shop.css">
+</head>
+
+<body>
+    <section id="header">
+        <header></header>
+    </section>
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <div class="side">
+                        <h5>PRODUCT CATEGORIES</h5>
+                        <div class="list-group">
+                            <ul>
+                                <li><input type="checkbox"> Beverages <i class="far fa-plus"></i>
+                                    <ul class="ul d-none">
+                                        <li><input type="checkbox">Coffe</li>
+                                        <li><input type="checkbox">Craft Beer</li>
+                                        <li><input type="checkbox">Drink Boxes & Pouches</li>
+                                        <li><input type="checkbox">Milk & Plant-Based Milks</li>
+                                        <li><input type="checkbox">Soda & Pop</li>
+                                        <li><input type="checkbox">Sparking Water</li>
+                                        <li><input type="checkbox">Tea & kombucha</li>
+                                        <li><input type="checkbox">Water</li>
+                                        <li><input type="checkbox">Wine</li>
+                                    </ul>
+                                </li>
+                                <li><input type="checkbox"> Biscuits & Snacks</li>
+                                <li><input type="checkbox"> Breads & Bakery <i class="far fa-plus"></i>
+                                    <ul class="ul d-none">
+                                        <li><input type="checkbox">Buns and Rolls</li>
+                                        <li><input type="checkbox">Cakes and Cupcakes</li>
+                                        <li><input type="checkbox">Cookies and Brownies</li>
+                                        <li><input type="checkbox">Donuts and Muffins</li>
+                                        <li><input type="checkbox">Order Specialty Cakes</li>
+                                        <li><input type="checkbox">Packaged Breads</li>
+                                    </ul>
+                                </li>
+                                <li><input type="checkbox"> Breakfast & Dairy <i class="far fa-plus"></i>
+                                    <ul class="ul d-none">
+                                        <li><input type="checkbox">Butter and Margarine</li>
+                                        <li><input type="checkbox">Cheese</li>
+                                        <li><input type="checkbox">Eggs Subtitutes</li>
+                                        <li><input type="checkbox">Honey</li>
+                                        <li><input type="checkbox">Marmalades</li>
+                                        <li><input type="checkbox">Milk & Flavoured Milk</li>
+                                        <li><input type="checkbox">Sour Cream and Dips</li>
+                                        <li><input type="checkbox">Yogurt</li>
+                                    </ul>
+                                </li>
+                                <li><input type="checkbox"> Frozen Foods</li>
+                                <li><input type="checkbox"> Fruits & Vegetables <i class="far fa-plus"></i>
+                                    <ul class="ul d-none">
+                                        <li><input type="checkbox">Herbs & Seasonings</li>
+                                        <li><input type="checkbox">Packaged Produce</li>
+                                        <li><input type="checkbox">Part Trays </li>
+                                        <li><input type="checkbox">Cuts & Sprouts</li>
+                                        <li><input type="checkbox">Exotic Fruits & Veggies</li>
+                                        <li><input type="checkbox">Fresh Fruits</li>
+                                        <li><input type="checkbox">Fresh Vegetables</li>
+                                    </ul>
+                                </li>
+                                <li><input type="checkbox"> Grocery & Staples</li>
+                                <li><input type="checkbox"> Household Needs</li>
+                                <li><input type="checkbox"> Meats & Seadfood <i class="far fa-plus"></i>
+                                    <ul class="ul d-none">
+                                        <li><input type="checkbox">Shrimp</li>
+                                        <li><input type="checkbox">Sliced Deli Meat</li>
+                                        <li><input type="checkbox">Wild Caught Fillets</li>
+                                        <li><input type="checkbox">Beef</li>
+                                        <li><input type="checkbox">Breakfast Sausage</li>
+                                        <li><input type="checkbox">Chicken</li>
+                                        <li><input type="checkbox">Crab and Shellfish</li>
+                                        <li><input type="checkbox">Dinner Sausage</li>
+                                        <li><input type="checkbox">Farm Raised Fillets</li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="range-slider">
+                            <h6>FILTER BY PRICE</h6>
+                            <input class="range-slider__range" type="range" value="70" min="0" max="70">
+                            <span class="range-slider__value">70</span>
+                            <span class="ms-5">FILTER</span>
+                        </div>
+                    </div>
+                    <div class="status mt-5">
+                        <h6>PRODUCT STATUS</h6>
+                        <ul>
+                            <li><input type="checkbox"> In Stock</li>
+                            <li><input type="checkbox"> On sale</li>
+                        </ul>
+                    </div>
+                    <div class="brands">
+                        <h6>BRANDS</h6>
+                        <ul>
+                            <li><input type="checkbox"> Frito Lay (6)</li>
+                            <li><input type="checkbox"> Nespresso (10)</li>
+                            <li><input type="checkbox"> Oreo (6)</li>
+                            <li><input type="checkbox"> Quaker (8)</li>
+                            <li><input type="checkbox"> Welch's (7)</li>
+                        </ul>
+                    </div>
+                    <div class="gif">
+                        <img src="./assets/img/sidebar-banner.gif" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-8 mt-5">
+                    <div class="row">
+                        <div class="img">
+                            <img src="./assets/img/bacola-banner-18.jpg" alt="">
+                        </div>
+                        <div class="tab-layout">
+                            <div class="row">
+                                <div class="col-8 mt-3">
+                                    <ul>
+                                        <li><img src="./assets/icons/bars.png" alt=""></li>
+                                        <li><img src="./assets/icons/grid.png" alt=""></li>
+                                        <li><img src="./assets/icons/menu.png" alt=""></li>
+                                        <li><img src="./assets/icons/thumbnail.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="col-2">
+                                    <h6 class="mt-3" style="cursor: pointer;">Sort by latest <span
+                                            class="fal fa-angle-down ms-2 fa-lg" id="1"></span>
+                                    </h6>
+                                    <div class="sort-categories d-none ">
+                                        <ul>
+                                            <li>Sort by popularity</li>
+                                            <li>Sort by average rating</li>
+                                            <li>Sort by latest</li>
+                                            <li>Sort by price: low to high</li>
+                                            <li>Sort by price: high to low</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <h6 style="cursor: pointer;">Show <strong>12</strong><span
+                                            class="fal fa-angle-down fa-lg ms-2" id="2"></h6>
+                                    <div class="count-categories d-none">
+                                        <ul>
+                                            <li>12</li>
+                                            <li>24</li>
+                                            <li>36</li>
+                                            <li>48</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mt-5 mt-5">
+                            <div class="card-products">
+                                <img src="./assets/img/product-image-10-346x310.jpg" class="card-image">
+                                <p class="discount"> 19%</p>
+                                <div class="hidden-icon">
+                                    <a href="#"><i class="fal fa-heart fa-lg"></i></a>
+                                    <a href="#"><i class="fal fa-arrows fa-lg"></i></a>
+                                </div>
+                                <div class="body">
+                                    <p class="title"><a class="a" href="#">Tomatoes on the Vine</a></p>
+                                    <p class="stock">IN STOCK</p>
+                                    <span class="fa fa-star yellows"></span>
+                                    <span class="fa fa-star yellows"></span>
+                                    <span class="fa fa-star yellows"></span>
+                                    <span class="fal fa-star gray"></span>
+                                    <span class="fal fa-star gray">1</span><br>
+                                    <span class="price">$39.00</span>
+                                    <span class="second-price">-$29.00</span>
+                                    <a href="#" class="btn btn-primary">Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6  mt-5 mt-5">
+                            <div class="card-products">
+                                <img src="./assets/img/product-image-4-346x310.jpg" class="card-image">
+                                <p class="discount"> 26%</p>
+                                <div class="hidden-icon">
+                                    <a href="#"><i class="fal fa-heart fa-lg"></i></a>
+                                    <a href="#"><i class="fal fa-arrows fa-lg"></i></a>
+                                </div>
+                                <div class="body">
+                                    <p class="title"><a class="a" href="#">Warrior Blend Organic</a></p>
+                                    <p class="stock">IN STOCK</p>
+                                    <span class="fa fa-star yellows"></span>
+                                    <span class="fa fa-star yellows"></span>
+                                    <span class="fa fa-star yellows"></span>
+                                    <span class="fa fa-star yellows"></span>
+                                    <span class="fal fa-star gray">1</span><br>
+                                    <span class="price">$79.99</span>
+                                    <span class="second-price">-$49.99</span>
+                                    <a href="#" class="btn btn-primary">Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6  mt-5">
+                            <div class="card-products">
+                                <img src="./assets/img/product-image-7-346x310.jpg" class="card-image" alt="...">
+                                <p class="discount"> 19%</p>
+                                <div class="hidden-icon">
+                                    <a href="#"><i class="fal fa-heart fa-lg"></i></a>
+                                    <a href="#"><i class="fal fa-arrows fa-lg"></i></a>
+                                </div>
+                                <div class="body">
+                                    <p class="title"><a class="a" href="#">USDA Choice Angus Beef Stew Meat</a></p>
+                                    <p class="stock">IN STOCK</p>
+                                    <span class="fa fa-star yellows"></span>
+                                    <span class="fa fa-star yellows"></span>
+                                    <span class="fa fa-star yellows"></span>
+                                    <span class="fal fa-star gray"></span>
+                                    <span class="fal fa-star gray">1</span><br>
+                                    <span class="price">$.08</span>
+                                    <span class="second-price">-$4.32</span>
+                                    <a href="#" class="btn btn-primary">Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mt-5">
+                            <div class="card-products">
+                                <img src="./assets/img/product-image-45-346x310.jpg" class="card-image">
+                                <div class="hidden-icon">
+                                    <a href="#"><i class="fal fa-heart fa-lg"></i></a>
+                                    <a href="#"><i class="fal fa-arrows fa-lg"></i></a>
+                                </div>
+                                <div class="body">
+                                    <p class="title"><a class="a" href="#">Foster Farms Takeout Crispy Classic Buffalo
+                                            Wings</a></p>
+                                    <p class="stock">IN STOCK</p>
+                                    <span class="fa fa-star yellows"></span>
+                                    <span class="fa fa-star yellows"></span>
+                                    <span class="fa fa-star yellows"></span>
+                                    <span class="fa fa-star yellows"></span>
+                                    <span class="fal fa-star gray">1</span><br>
+                                    <span class="price">$7.25 </span>
+                                    <span class="second-price"> –$49.99</span>
+                                    <a href="#" class="btn btn-primary">Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="col-9">
+
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="coupon">
+        <div class="container">
+            <div class="row mt-5 mt-5">
+                <div class="col-xl-6 col-sm-6">
+                    <div class="content">
+                        <span>$20 discount for your first order</span>
+                        <h2>Join our newsletter and get...</h2>
+                        <p>Join our email subscription now to get updates <br> on promotions and coupons.</p>
+                        <div class="form">
+                            <form>
+                                <i class="fal fa-envelope"></i>
+                                <input class="input" type="email" placeholder="Your email adress">
+                                <button class="btn btn-primary" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6">
+                    <img src="./assets/img/coupon.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        <div class="container-md">
+            <div class="row mt-5">
+                <div class="col-xl-3 bor col-sm-6">
+                    <i class="fal fa-glass fa-lg"></i>
+                    <span>Everyday fresh products</span>
+                </div>
+                <div class="col-xl-3 bor col-sm-6">
+                    <img class="img img-one" src="./assets/icons/delivery.png" alt="">
+                    <span>Free delivery for order over $70</span>
+                </div>
+                <div class="col-xl-3 bor col-sm-6">
+                    <i class="fal fa-badge-percent fa-lg"></i>
+                    <span>Daily Mega Discounts</span>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <img class="img " src="./assets/icons/dollar.png" alt="">
+                    <span>Best price on the
+                        market</span>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div> <br>
+    <section id="footer">
+        <div class="footer">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-xl-2 col-sm-2">
+                        <div class="fruits ">
+                            <ul>
+                                <h4><a href="">FRUIT & VEGETABLES</a></h4>
+                                <li><a href="">Fresh Vegetables</a></li>
+                                <li><a href="">Herbs & Seasonings</a></li>
+                                <li><a href="">Fresh Fruits</a></li>
+                                <li><a href="">Cuts & Sprouts</a></li>
+                                <li><a href="">Exotic Fruits & Veggies</a></li>
+                                <li><a href="">Packaged Produce</a></li>
+                                <li><a href="">Party Trays</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-sm-2">
+                        <div class="dairy">
+                            <ul>
+                                <h4><a href="#">BREAKFAST & DAIRY</a></h4>
+                                <li><a href="#">Milk & Flavoured Milk</a></li>
+                                <li><a href="#">Butter and Margarine</a></li>
+                                <li><a href="#">Cheese</a></li>
+                                <li><a href="#">Eggs Subsituties</a></li>
+                                <li><a href="#">Honey</a></li>
+                                <li><a href="#">Marmalades</a></li>
+                                <li><a href="#">Sour Cream and Dips</a></li>
+                                <li><a href="#">Yogurt</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-sm-2">
+                        <div class="dairy">
+                            <ul>
+                                <h4><a href="#">MEAT & SEAFOOD</a></h4>
+                                <li><a href="#">Breakfast Sausage</a></li>
+                                <li><a href="#">Dinner Sausage</a></li>
+                                <li><a href="#">Beef</a></li>
+                                <li><a href="#">Chicken</a></li>
+                                <li><a href="#">Sliced Deli Meat</a></li>
+                                <li><a href="#">Shrimp</a></li>
+                                <li><a href="#">Wild Caught Fillets</a></li>
+                                <li><a href="#">Farm Raised Fillets</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-sm-2">
+                        <div class="dairy">
+                            <ul>
+                                <h4><a href="#">BEVERAGES</a></h4>
+                                <li><a href="#">Water</a></li>
+                                <li><a href="#">Sparkling Water</a></li>
+                                <li><a href="#">Soda</a></li>
+                                <li><a href="#">Coffee</a></li>
+                                <li><a href="#">Milk & Plant-Based Milk</a></li>
+                                <li><a href="#">Tea & Kombucha</a></li>
+                                <li><a href="#">Drink Boxes & Pouches</a></li>
+                                <li><a href="#">Craft Beer</a></li>
+                                <li><a href="#">Wine</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-sm-2">
+                        <div class="dairy">
+                            <ul>
+                                <h4><a href="#">BREADS & BAKERY</a></h4>
+                                <li><a href="#">Milk & Flavoured</a></span></li>
+                                <li><a href="#">Butter and Margarine</a></span></li>
+                                <li><a href="#">Cheese</a></span></li>
+                                <li><a href="#">Eggs Subsituties</a></span></li>
+                                <li><a href="#">Honey</a></span></li>
+                                <li><a href="#">Marmalades</a></span></li>
+                                <li><a href="#">Sour Cream and Dips</a></span></li>
+                                <li><a href="#">Yogurt</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="row">
+                        <div class="col-xl-5 col-sm-12">
+                            <img src="./assets/icons/call.png" alt=""> <span style="font-size:1.5rem; color:#202435">8
+                                800 555-55</span>
+                            <p class="mr-5">Working 8:00-22:00</p>
+                        </div>
+                        <div class="col-xl-5 col-sm-12">
+                            <div class="download">
+                                <h6>Download App on Mobile :</h6>
+                                <span>15% discount on your first purchase</span>
+                                <a href="https://play.google.com/store/movies"><img src="./assets/img/google-play.png"
+                                        alt=""></a>
+                                <a href="https://www.apple.com/app-store/"><img src="./assets/img/app-store.png"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-12">
+                            <div class="links">
+                                <ul>
+                                    <li class="face"><a href="https://www.facebook.com/"><i
+                                                class="fab fa-facebook-f fa-lg"></i></i></a></li>
+                                    <li><a href="https://twitter.com/"><i class="fab fa-twitter fa-lg"></i></a></li>
+                                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-xl-5 col-sm-12">
+                        <span>Copyright 2022 © Bacola WordPress Theme. All rights reserved. Powered by KlbTheme.</span>
+                    </div>
+                    <div class="col-xl-7 col-sm-12">
+                        <div class="policy">
+                            <ul>
+                                <li><a href="https://klbtheme.com/bacola/privacy-policy/">Privacy Policy</a></li>
+                                <li><a href="https://klbtheme.com/bacola/terms-and-conditions/">Terms and Conditions</a>
+                                </li>
+                                <li><a href="https://klbtheme.com/bacola/my-account/#">Cookie</a></li>
+                                <li><a href="./login.html"><img src="./assets/img/payments.jpg" alt=""></a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/shop.js"></script>
+</body>
+
+</html>

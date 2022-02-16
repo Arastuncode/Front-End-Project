@@ -65,10 +65,10 @@ $border-color: #ebecf0;
     }
   }
   .send {
-      margin-top: 95px;
+    margin-top: 95px;
     margin-left: 3.5%;
     color: $secondary-text-color;
-    width: 1200px;
+    
     height: 800px;
     box-shadow: 4px 4px 8px 8px rgba(83, 83, 83, 0.2),
       0 6px 20px 0 rgba(116, 114, 114, 0.19);
@@ -82,7 +82,7 @@ $border-color: #ebecf0;
   }
   .form {
     margin-left: 18%;
-    width: 900px;
+    width: 75%;
     .form-control {
       background-color: $background-color !important;
       border: none;

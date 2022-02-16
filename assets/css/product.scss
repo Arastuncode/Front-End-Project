@@ -232,25 +232,34 @@ header {
     }
   }
   .tab-menu {
-    .tab {
+    .tabs {
       overflow: hidden;
       border-bottom: 1px solid $border-color;
       background-color: white;
-      button {
-        background-color: white;
-        float: left;
-        border: none;
-        cursor: pointer;
-        padding: 14px 16px;
-        transition: 0.5s;
-        font-style: bold;
-        font-family: Inter, sans-serif;
-      }
-    }
-    .tabcontent {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      li{
+      background: none;
+      color: #222;
+      display: inline-block;
+      padding: 10px 15px;
+      cursor: pointer;
+      }   
+      &.current{
+       background: #ededed;
+       color: #222;
+        }
+      } 
+  }    
+      .tab-content {
       display: none;
       padding: 6px 12px;
       background-color: white;
+      &.current{
+        display: inherit;
+        
+      }
       .text {
         padding-right: 10px;
         width: 40%;
@@ -314,8 +323,10 @@ header {
       box-shadow: 10px 5px 5px rgb(185, 185, 185);
       border: 0.5px solid $primary-background-color;
       border-radius: 6px;
+      
     }
     transition: all 0.5s;
+    transition-delay: 0.2s;
     width: 21rem;
     height: 37rem;
     border-radius: 6px;
@@ -343,14 +354,17 @@ header {
          &:hover {
           background-color: rgb(19, 19, 91);
           color: white;
+          transition-delay: 0.2s;
         }
       }
     }
     &:hover .btn {
       visibility: visible !important;
+      transition-delay: 0.2s;
     }
     &:hover i {
       visibility: visible !important;
+      transition-delay: 0.2s;
     }
     .card-image {
       width: 90%;
@@ -377,6 +391,9 @@ header {
     }
     .body {
       margin-left: 10px;
+      .btn{
+        margin-left:10px;
+      }
       .second-price {
         color: #ea2b0f;
         font-size: 20px;
@@ -422,7 +439,6 @@ header {
       }
     }
   }
-}
 
 .coupon {
   width: 100%;

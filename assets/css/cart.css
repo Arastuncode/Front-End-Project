@@ -25,13 +25,18 @@ header {
 }
 
 #basket-product .info .second-product {
-  border-bottom: 2px solid #e3e4e9;
   border-top: 1px solid #e3e4e9;
+  height: 200px;
+}
+
+#basket-product .info .second-product ul li {
+  margin-left: -25px;
+  padding-right: 25px;
 }
 
 #basket-product .info img {
   cursor: pointer;
-  width: 150px;
+  width: 130px;
   height: 130px;
 }
 
@@ -46,7 +51,7 @@ header {
 }
 
 #basket-product .info i {
-  padding-left: 5px;
+  padding-right: 20px;
   cursor: pointer;
 }
 
@@ -65,6 +70,13 @@ header {
   cursor: pointer;
 }
 
+#basket-product .inputs {
+  position: relative;
+  top: 48%;
+  padding-top: 10px;
+  border-top: 1px solid #e3e4e9;
+}
+
 #basket-product .inputs input[type="text"] {
   width: 280px;
   height: 45px;
@@ -77,19 +89,20 @@ header {
 
 #basket-product .inputs .btn {
   width: 150px;
-  height: 45px;
+  height: 43px;
   background-color: #233a95;
   border-radius: 4px;
+  margin-left: 3px;
 }
 
 #basket-product .inputs .button {
   width: 150px;
   height: 45px;
   background-color: #f0f0f0;
-  color: #cfcfe6;
+  color: #b5b5b6;
   border-radius: 4px;
   border: none;
-  margin-left: 31%;
+  margin-left: 25%;
   opacity: 0.8;
 }
 
@@ -97,7 +110,7 @@ header {
   height: 450px;
   margin-left: 15%;
   border: 1px solid #e3e4e9;
-  width: 400px;
+  width: 420px;
 }
 
 #basket-product .selling-info .price {
@@ -125,12 +138,12 @@ header {
 }
 
 #basket-product .selling-info .shipping-detail .shipping {
-  height: 200px;
+  height: 170px;
   border-right: 1px solid #e3e4e9;
 }
 
 #basket-product .selling-info .shipping-detail .shipping h5 {
-  padding-top: 55%;
+  padding-top: 50%;
   margin-left: 5px;
 }
 
@@ -154,7 +167,7 @@ header {
 
 #basket-product .selling-info .total {
   margin-top: 5%;
-  height: 50px;
+  height: 40px;
   border-bottom: 1px solid #e3e4e9;
 }
 
@@ -171,7 +184,7 @@ header {
   width: 90%;
   height: 50px;
   margin-left: 5%;
-  margin-top: 5%;
+  margin-top: 5px;
 }
 
 #basket-product .selling-info .btn:hover {
@@ -181,5 +194,191 @@ header {
 #basket-product .selling-info .btn a {
   text-decoration: none;
   color: white;
+}
+
+.coupon {
+  width: 100%;
+  height: 360px;
+  background-color: #233a95;
+  position: relative;
+}
+
+.coupon img {
+  position: absolute;
+  bottom: 0%;
+}
+
+.coupon .content {
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+.coupon .content p {
+  font-family: "Inter", sans-serif;
+  padding-top: 5px;
+  color: gray;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.coupon .content .form {
+  color: white;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  position: relative;
+}
+
+.coupon .content .form i {
+  position: absolute;
+  top: 28%;
+  left: -7.5%;
+  color: gray;
+  font-size: 25px;
+}
+
+.coupon .content .form .input {
+  width: 470px;
+  height: 70px;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  margin-left: -50px;
+  outline: none;
+}
+
+.coupon .content .form .btn {
+  right: 1%;
+  top: 10%;
+  position: absolute;
+  height: 55px;
+  width: 95px;
+  background-color: #233a95;
+  border: none;
+}
+
+.info {
+  height: 30px;
+  padding-left: 3%;
+  text-align: center;
+  font-family: Inter, sans-serif;
+}
+
+.info .bor {
+  border-right: 1px solid #e3e4e9;
+  padding-right: 5px;
+}
+
+.info .img-one {
+  margin-left: 10px;
+}
+
+.info i::after {
+  padding-left: 10px;
+}
+
+.footer {
+  background: #f7f8fd;
+  height: 260px;
+  padding-left: 5%;
+}
+
+.footer .dairy {
+  padding-right: 15px;
+}
+
+.footer h4 a {
+  color: #202435;
+  font-size: 0.9375rem;
+  font-weight: bolder;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul a {
+  text-decoration: none;
+  color: #71778e;
+}
+
+.footer ul li {
+  margin-top: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer .social {
+  margin-top: 150px;
+}
+
+.footer .social .phone {
+  width: 50px;
+  height: 50px;
+  border-top: 2px solid #e3e4e9;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.footer .social .phone img {
+  margin-top: 7px;
+  position: relative;
+}
+
+.footer .social .phone span {
+  font-size: xx-large;
+}
+
+.footer .social .download {
+  height: 100px;
+}
+
+.footer .social .download span {
+  font-size: 13px;
+  color: #71778e;
+}
+
+.footer .social .download img {
+  position: relative;
+  bottom: 23%;
+  left: 3%;
+  cursor: pointer;
+}
+
+.footer .social .links ul {
+  list-style: none;
+}
+
+.footer .social .links ul li {
+  display: inline;
+  margin-left: 15px;
+}
+
+.footer .social .links ul li a {
+  text-decoration: none;
+  color: #233a95;
+}
+
+.footer span {
+  font-size: 13px;
+  color: #71778e;
+}
+
+.footer .policy ul li {
+  display: inline;
+  margin-left: 25px;
+}
+
+.footer .policy ul li:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=cart.css.map */

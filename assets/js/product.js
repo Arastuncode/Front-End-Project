@@ -1,29 +1,13 @@
-/*$(function () {
-  $(document).on("click", ".tab-menu .header div", function () {
-    $(".active").removeClass("active");
-    $(this).addClass("active");
-    let id = $(this).attr("data-id");
-    $(".tab-menu .content div").addClass("d-none");
-    $(`.tab-menu .content [data-id="${id}"]`).removeClass("d-none");
-  });
-});
-*/
+$(document).ready(function(){
+	
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
 
-function openCity(evt, name) {
-    var i,tabcontent,tablinks;
-    tabcontent =document.getElementsByClassName("tabcontent");
-    for (i=0; i<tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (let i = 0; i < tablinks.length; i++) {
-        tablinks[i].className=tablinks[i].className.replace(".active"," ") ;   
-        tablinks[i].style.color = "black";
-    }
-    document.getElementById(name).style.display="block";
-    evt.curreentTarget.className += "active";
-    
-}
-$(document).ready(function () {           
-  $('.carousel').carousel();       
-});
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
+
+})
