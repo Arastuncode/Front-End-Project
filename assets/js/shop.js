@@ -21,6 +21,17 @@ $(document).ready(function () {
     $(".count-categories").addClass("d-block");
     $(".count-categories").slideToggle(1000);  
   });
+  
+$(document).ready(function () {
+  $("h6").hover(function () {
+   $(this).addClass("active")
+  });  
+  $("h6").mouseout(function () {
+      $(this).removeClass("active")
+     });  
+});
+
+
 });
 var rangeSlider = function () {
   var slider = $(".range-slider"),

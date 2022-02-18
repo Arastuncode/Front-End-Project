@@ -10,6 +10,16 @@ $(document).ready(function(){
 		$("#"+tab_id).addClass('current');
 	})
 
+	$(document).ready(function () {
+		$("h6").hover(function () {
+		 $(this).addClass("active")
+		});  
+		$("h6").mouseout(function () {
+			$(this).removeClass("active")
+		   });  
+	  });
+	  
+	  
 })
 var galleryThumbs = new Swiper('.gallery-thumbs', {
 	spaceBetween: 5,
