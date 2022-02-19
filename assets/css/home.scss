@@ -925,6 +925,7 @@ hr {
       text-align: center;
       border-radius: 50%;
       display: none;
+      color: red;
       i {
         margin-top: 11px;
       }
@@ -1195,12 +1196,13 @@ hr {
       text-align: center;
       border-radius: 50%;
       display: none;
+      color: red;
       i {
         margin-top: 11px;
       }
       &:hover {
-        background-color: white;
-        color: #ed174a;
+        background-color: #223a95;
+        color: white;
       }
     }
     .arrows-icon {
@@ -1217,8 +1219,8 @@ hr {
         margin-top: 17px;
       }
       &:hover {
-        background-color: white;
-        color: #2bbef9;
+        background-color: #223a95;
+        color: white;
       }
     }
 
@@ -1353,6 +1355,7 @@ hr {
         text-align: center;
         border-radius: 50%;
         display: none;
+        color: red;
         i {
           margin-top: 11px;
         }
