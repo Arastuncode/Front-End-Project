@@ -78,8 +78,54 @@
                             <span><a href="#">Online Grocery Shopping Center</a> </span>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2">
-                        <p>MODAL</p>
+                    <div class="col-2">
+                        <div class="location">
+                            <button type="button" class="btn-modal btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                <span>Your Location</span><i class="fal fa-angle-down"></i><br>
+                                <strong>Select a location</strong>
+                            </button>
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+
+                                            <p id="staticBackdropLabel" class="modal-title"><strong>Choose your Delivery
+                                                    Location</strong>
+                                                <br>
+                                                Enter your address and we will specify the offer for your area.
+                                            </p>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modals-search">
+                                                <i class="fa-solid fa-magnifying-glass"></i><input class="search ps-1"
+                                                    style="width: 95%; margin-bottom: 10px; border: none;"
+                                                    placeholder="Search your area" type="search">
+                                            </div>
+                                            <ul>
+                                                <li class="list-group-item">Select a Location <span>Clear All</span>
+                                                </li>
+                                                <li class="list-group-item">Alabama <span>Min:130$</span> </li>
+                                                <li class="list-group-item">Alaska <span>Min:120$</span></li>
+                                                <li class="list-group-item">Arizoan <span>Min:150$</span> </li>
+                                                <li class="list-group-item">Colifornia<span>Min:110$</span> </li>
+                                                <li class="list-group-item">Colorado<span>Min:140$</span> </li>
+                                                <li class="list-group-item">Florida<span>Min:160$</span></li>
+                                                <li class="list-group-item">Georgia <span>Min:120$</span> </li>
+                                                <li class="list-group-item">Kansas<span>Min:170$</span> </li>
+                                                <li class="list-group-item">Minneota<span>Min:120$</span> </li>
+                                                <li class="list-group-item">New York<span>Min:110$</span> </li>
+                                                <li class="list-group-item">Washington<span>Min:130$</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-5 col-md-3 col-sm-3">
                         <div class="search">
@@ -130,17 +176,19 @@
                                 <i class="fal fa-bars"></i> ALL CATEGORIES
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                <li><a class="dropdown-item" href="#"><i class="fal fa-apple-alt"></i> Fruits &
-                                        Vegetables <i class="fal fa-angle-right" id="1"></i></a>
-                                    <ul class="one d-none">
-                                        <li><a class="dropdown-item" href="#">Cuts & Sprouts</a></li>
-                                        <li><a class="dropdown-item" href="#">Exotic Fruits & Veggies</a></li>
-                                        <li><a class="dropdown-item" href="#">Fresh Fruits</a></li>
-                                        <li><a class="dropdown-item" href="#">Fresh Vegetables</a></li>
-                                        <li><a class="dropdown-item" href="#">Herbs & Seasonings</a></li>
-                                        <li><a class="dropdown-item" href="#">Packaged Produce</a></li>
-                                        <li><a class="dropdown-item" href="#">Party Trays</a></li>
-                                    </ul>
+                                <li ><a class="dropdown-item" href="#"><i class="fal fa-apple-alt"></i> Fruits &
+                                        Vegetables <i class="fal fa-angle-right" ></i></a>
+                                     <!-- <div id="1" >
+                                        <ul>
+                                            <li>Cuts & Sprouts</li>
+                                            <li>Exotic Fruits & Veggies</li>
+                                            <li>Fresh Fruits</li>
+                                            <li>Fresh Vegetables</li>
+                                            <li>Herbs & Seasonings</li>
+                                            <li>Packaged Produce</li>
+                                            <li>Party Trays</li>
+                                        </ul>
+                                    </div> -->
                                 </li>
                                 <li><a class="dropdown-item" href="#"><i class="fal fa-steak"></i> Meats &
                                         Seafood</a>
@@ -198,68 +246,72 @@
                             </div>
                             <div class="dropdown">
                                 <div class="dropdown ">
-                                    <div class="head">
-                                        <h5 style="cursor: pointer;">SHOP <span class="fal fa-angle-down  fa-lg"
-                                                id="1"></span>
-                                        </h5>
-                                    </div>
-                                    <div class="dropdown-content dropdown big">
-                                        <div class="row">
-                                            <div class="col-2">
-                                                <a href="#">Shop Lists</a>
-                                                <ul>
-                                                    <li><a href="#">Shop Default</a></li>
-                                                    <li><a href="#">Shop Right Sidebar</a></li>
-                                                    <li><a href="#">Shop Wide</a></li>
-                                                    <li><a href="#">List Left Sidebar</a></li>
-                                                    <li><a href="#">Load more Button</a></li>
-                                                    <li><a href="#">Infinite Scrolling</a></li>
-                                                </ul>
+                                    <div class="shop-dropdown">
+                                        <div class="page">
+                                           <h5> <a href="">SHOP <span class="fal fa-angle-down  fa-lg"
+                                            id="1"></span></a></h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <div class="lists">
+                                                            <a class="first" href="">Shop Lists</a><br>
+                                                            <a href="">Shop Default</a><br>
+                                                            <a href="">Shop Right Sidebar</a><br>
+                                                            <a href="">Shop Wide</a><br>
+                                                            <a href="">List Left Sidebar</a><br>
+                                                            <a href="">Load More Button</a><br>
+                                                            <a href="">Infinite Scrolling</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 ms-5">
+                                                        <div class="lists">
+                                                            <a class="first" href="">Product Detail</a><br>
+                                                            <a href="">Product Default</a><br>
+                                                            <a href="">Product Variable</a><br>
+                                                            <a href="">Product Grouped</a><br>
+                                                            <a href="">Product External</a><br>
+                                                            <a href="">Product Downloadable</a><br>
+                                                            <a href="">Product With Video</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 ms-5">
+                                                        <div class="lists">
+                                                            <a class="first" href="">Product Types</a><br>
+                                                            <a href="">Single Type 1</a><br>
+                                                            <a href="">Single Type 2</a><br>
+                                                            <a href="">Single Type 3</a><br>
+                                                            <a href="">Single Type 4</a><br>
+                                                            <a href="">Thumbnails Left</a><br>
+                                                            <a href="">Zoom Image</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 ms-5">
+                                                        <div class="lists">
+                                                            <a class="first" href="">Shop Pages</a><br>
+                                                            <a href="">Cart</a><br>
+                                                            <a href="">Checkout</a><br>
+                                                            <a href="">My account</a><br>
+                                                            <a href="">Wishlist</a><br>
+                                                            <a href="">Order Tracking</a><br>
+                                                            <a href="">Order on WhatsApp</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2 ms-5">
+                                                        <div class="lists">
+                                                            <a class="first" href="">Shop Layouts</a><br>
+                                                            <a href="">Two Columns</a><br>
+                                                            <a href="">Three Columns</a><br>
+                                                            <a href="">Three Columns Wide</a><br>
+                                                            <a href="">Four Columns</a><br>
+                                                            <a href="">Four Columns Wide</a><br>
+                                                            <a href="">Five Columns Wide</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-2">
-                                                <a href="#">Product Detail</a>
-                                                <ul>
-                                                    <li><a href="#">Product Default</a></li>
-                                                    <li><a href="#">Product Variable</a></li>
-                                                    <li><a href="#">Product Grouped</a></li>
-                                                    <li><a href="#">Product External</a></li>
-                                                    <li><a href="#">Product Downloadable</a></li>
-                                                    <li><a href="#">Product With Video</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-2">
-                                                <a href="#">Product Types</a>
-                                                <ul>
-                                                    <li><a href="#">Single Type 1</a></li>
-                                                    <li><a href="#">Single Type 2</a></li>
-                                                    <li><a href="#">Single Type 3</a></li>
-                                                    <li><a href="#">Single Type 4</a></li>
-                                                    <li><a href="#">Thumnnails left</a></li>
-                                                    <li><a href="#">Zoom Image</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-2">
-                                                <a href="#">Shop Pages</a>
-                                                <ul>
-                                                    <li><a href="#">Cart</a></li>
-                                                    <li><a href="#">Checkout</a></li>
-                                                    <li><a href="#">My account</a></li>
-                                                    <li><a href="#">Wishlist</a></li>
-                                                    <li><a href="#">Order Tracking</a></li>
-                                                    <li><a href="#">Order on WhatsApp</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-2">
-                                                <a href="#">Shop Layout</a>
-                                                <ul>
-                                                    <li><a href="#">Two Colums</a></li>
-                                                    <li><a href="#">Three Colums</a></li>
-                                                    <li><a href="#">Three Colums Wide</a></li>
-                                                    <li><a href="#">Four Colums</a></li>
-                                                    <li><a href="#">Four Colums Wide</a></li>
-                                                    <li><a href="#">Four Colums wide</a></li>
-                                                </ul>
-                                            </div>
+                
                                         </div>
                                     </div>
                                 </div>
@@ -349,9 +401,9 @@
                         class="button mt-3"><button type="button" class="btn btn-primary">Read More</button></a>
                     <div class="pages mt-5">
                         <div class="one"><a href="#">1</a></div>
-                        <div class="one two"><a href="#">2</a></div>
-                        <div class="one two"><a href="#"><i class="fal fa-angle-right fa-2xl"></i></a></div>
-
+                        <div class="one two"><a href="./blog2.html">2</a></div>
+                        <div class="one two"><a href="./blog2.html"><i class="fal fa-angle-right fa-2xl"></i></a></div>
+                        
                     </div>
                 </div>
                 <div class="col-xl-2  col-sm-12">
@@ -382,20 +434,20 @@
                                     <div class="col-1 mt-3">
                                         <button type="submit" class="button btn facebook"><a
                                                 href="https://www.facebook.com/"><i
-                                                    class="fab fa-facebook-f"></i></a></button>
+                                                    class="fab fa-facebook-f me-4"></i>FACEBOOK</a></button>
                                         <button class="button btn twitter"><a href="https://twitter.com/i/flow/login"><i
-                                                    class="fab fa-twitter"></i></a></button>
+                                                    class="fab fa-twitter me-4"></i>TWITTER</a></button>
                                         <button class="button btn pinterest"><a href="https://www.pinterest.com/"><i
-                                                    class="fab fa-pinterest-p"></i></a></button>
+                                                    class="fab fa-pinterest-p me-4"></i>PINTEREST</a></button>
                                         <button class="button btn linkedin"><a href="https://www.linkedin.com/"><i
-                                                    class="fab fa-linkedin-in"></i></a></button>
+                                                    class="fab fa-linkedin-in me-4"></i>LINKEDIN</a></button>
                                         <button class="button btn reddit"><a href="https://www.reddit.com/"><i
-                                                    class="fab fa-reddit"></i></a></button>
+                                                    class="fab fa-reddit me-4"></i>REDDIT</a></button>
                                     </div>
                                 </div>
                             </div>
                             <p class="p  mt-3">WIDGET BANNER</p>
-                            <img class="gif" src="./assets/img/sidebar-banner.gif" alt="">
+                            <img class="gif" src="./assets/img/sidebar-banner.gif"style="width: 100%; height: 100%;">
                             <p class="mt-5">Tags</p>
                             <div class="boxes">
                                 <div class="row">

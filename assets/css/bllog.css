@@ -112,6 +112,95 @@
   height: 100%;
 }
 
+#header .header-center .location .btn-modal {
+  position: relative;
+  background-color: white;
+  color: #233a95;
+  border: 1px solid rgba(151, 151, 151, 0.5);
+  margin-top: 8px;
+  margin-left: 35px;
+  height: 54px;
+  border-radius: 5px;
+  width: 180px;
+}
+
+#header .header-center .location .btn-modal strong {
+  font-size: 13px;
+  color: #223a95;
+  padding-right: 50px;
+}
+
+#header .header-center .location .btn-modal .fa-solid {
+  font-size: 13px;
+  position: absolute;
+  top: 20px;
+  right: 12px;
+}
+
+#header .header-center .location .btn-modal span {
+  font-size: 0.6875rem;
+  margin: 0;
+  color: #979797;
+  padding-right: 82px;
+}
+
+#header .header-center .location .btn-modal:hover {
+  -webkit-box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.1), 0 10px 35px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.1), 0 10px 35px 0 rgba(0, 0, 0, 0.1);
+}
+
+#header .header-center .location .btn-modal:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#header .header-center .location .modal-body {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+#header .header-center .location .modal-body span {
+  float: right;
+}
+
+#header .header-center .location .modal-body .modals-search {
+  margin-left: 32px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-top: 7px;
+  background-color: #f3f4f7;
+  width: 417px;
+  border-radius: 5px;
+}
+
+#header .header-center .location .modal-body .search {
+  background-color: transparent;
+}
+
+#header .header-center .location .modal-body .search::-webkit-input-placeholder {
+  color: #979797;
+}
+
+#header .header-center .location .modal-body .search:-ms-input-placeholder {
+  color: #979797;
+}
+
+#header .header-center .location .modal-body .search::-ms-input-placeholder {
+  color: #979797;
+}
+
+#header .header-center .location .modal-body .search::placeholder {
+  color: #979797;
+}
+
+#header .header-center .location .modal-body .search:focus {
+  border: none;
+}
+
+#header .header-center .location .modal-body .search:focus-visible {
+  outline: none;
+}
+
 #header .header-center .search #search {
   width: 100%;
   height: 60px;
@@ -223,6 +312,61 @@
 }
 
 #header .header-bottom .dropdown .dropdown-menu li a:hover {
+  color: #2bbef9;
+}
+
+#header .header-bottom .shop-dropdown {
+  position: relative;
+  height: 60px;
+}
+
+#header .header-bottom .shop-dropdown:hover .content {
+  display: block;
+}
+
+#header .header-bottom .shop-dropdown .page {
+  text-align: center;
+  margin-top: 25px;
+}
+
+#header .header-bottom .shop-dropdown .page a {
+  text-decoration: none;
+  color: #3e445a;
+  font-size: 16px;
+}
+
+#header .header-bottom .shop-dropdown .content {
+  position: absolute;
+  display: none;
+  z-index: 100;
+  width: 1553px;
+  background-color: white;
+  left: -585px;
+  top: 40px;
+  padding-left: 80px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+#header .header-bottom .shop-dropdown .content .first {
+  color: #0931c2;
+  font-weight: 700;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+#header .header-bottom .shop-dropdown .content a {
+  text-decoration: none;
+  color: #2b2b2b;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#header .header-bottom .shop-dropdown .content a:hover {
+  color: #2bbef9;
+}
+
+#header .header-bottom .shop-dropdown .content .lists:hover .first {
   color: #2bbef9;
 }
 
@@ -575,47 +719,20 @@
   background-color: #3b5998;
 }
 
-#main .side .content .social .facebook::after {
-  content: "Facebook";
-  color: white;
-}
-
 #main .side .content .social .twitter {
   background-color: #1da1f2;
-}
-
-#main .side .content .social .twitter::after {
-  content: "Twitter";
-  color: white;
 }
 
 #main .side .content .social .pinterest {
   background-color: #e60023;
 }
 
-#main .side .content .social .pinterest::after {
-  content: "Pinterest";
-  color: white;
-}
-
 #main .side .content .social .linkedin {
   background-color: #0077b5;
 }
 
-#main .side .content .social .linkedin::after {
-  content: "Linkedin";
-  color: white;
-}
-
 #main .side .content .social .reddit {
   background-color: #ff4500;
-}
-
-#main .side .content .social .reddit::after {
-  content: "Reddit";
-  display: inline-block;
-  color: white;
-  display: inline-block;
 }
 
 .coupon {

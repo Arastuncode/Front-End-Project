@@ -101,6 +101,71 @@ $border-color: #e3e4e9;
         height: 100%;
       }
     }
+    .location {
+      .btn-modal {
+        strong {
+          font-size: 13px;
+          color: #223a95;
+          padding-right: 50px;
+        }
+        .fa-solid {
+          font-size: 13px;
+          position: absolute;
+          top: 20px;
+          right: 12px;
+        }
+        span {
+          font-size: 0.6875rem;
+          margin: 0;
+          color: rgb(151, 151, 151);
+          padding-right: 82px;
+        }
+        position: relative;
+        background-color: white;
+        color: #233a95;
+        border: 1px solid rgba(151, 151, 151, 0.5);
+        margin-top: 8px;
+        margin-left: 35px;
+        height: 54px;
+        border-radius: 5px;
+        width: 180px;
+      }
+      .btn-modal:hover {
+        box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.1),
+          0 10px 35px 0 rgba(0, 0, 0, 0.1);
+      }
+      .btn-modal:focus {
+        box-shadow: none;
+      }
+      .modal-body {
+        height: 400px;
+        overflow-y: scroll;
+        span {
+          float: right;
+        }
+        .modals-search {
+          margin-left: 32px;
+          margin-bottom: 30px;
+          padding-left: 10px;
+          padding-top: 7px;
+          background-color: #f3f4f7;
+          width: 417px;
+          border-radius: 5px;
+        }
+        .search {
+          background-color: transparent;
+          &::placeholder {
+            color: rgb(151, 151, 151);
+          }
+        }
+        .search:focus {
+          border: none;
+        }
+        .search:focus-visible {
+          outline: none;
+        }
+      }
+    }
     .search {
       #search {
         width: 100%;
@@ -203,6 +268,55 @@ $border-color: #e3e4e9;
             color: #2bbef9;
           }
         }
+      }
+    }
+    .shop-dropdown {
+      position: relative;
+      height: 60px;
+      &:hover .content {
+        display: block;
+      }
+      .page {
+        text-align: center;
+        margin-top: 25px;
+        a {
+          text-decoration: none;
+          color: $main-text-color;
+          font-size: 16px;
+        }
+      }
+      .content {
+        position: absolute;
+        display: none;
+        z-index: 100;
+        width: 1553px;
+        background-color: white;
+        left: -585px;
+        top: 40px;
+        padding-left: 80px;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        .first {
+          color: #0931c2;
+          font-weight: 700;
+          display: inline-block;
+          padding-bottom: 20px;
+        }
+        a {
+          text-decoration: none;
+          color: rgb(43, 43, 43);
+          display: inline-block;
+          padding-bottom: 10px;
+          &:hover {
+            color: #2bbef9;
+          }
+        }
+        .lists {
+          &:hover .first {
+            color: #2bbef9;
+          }
+        }
+        
       }
     }
     .navigation {
