@@ -463,16 +463,17 @@
 .head-img {
   height: 750px;
   background-size: 650px 1200px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.5))), url(../img/about-header.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../img/about-header.jpg);
+  background-image: url(../img/about-header.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
 }
 
 .head-img .text {
   text-align: center;
-  color: white;
+  color: #ffff;
   font-weight: bold;
   position: absolute;
   bottom: 20%;

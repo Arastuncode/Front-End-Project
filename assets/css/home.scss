@@ -699,7 +699,129 @@ hr {
 #discount-products {
   position: relative;
   top: 50px;
+  .card-products {
+    &:hover {
+      box-shadow: 10px 5px 5px rgb(185, 185, 185);
+      border: 0.5px solid #233a95;
+      border-radius: 6px;
+    }
+    transition: all 0.5s;
+    transition-delay: 0.2s;
+    width: 17.8rem;
+    height: 30rem;
+    align-items: center;
+    border: 1px solid $border-color;
+    .hidden-icon {
+      margin-top: 5px;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      i {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        visibility: hidden;
+        margin-left: 220px;
+        line-height: 35px;
+        text-align: center;
+        align-items: center;
+        display: block;
+        transition: all 0.5s;
+        border-radius: 1px solid $border-color;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding-top: 5px;
+        &:hover {
+          background-color: rgb(19, 19, 91);
+          color: white;
+          transition-delay: 0.2s;
+        }
+      }
+    }
+    &:hover .btn {
+      visibility: visible !important;
+      transition-delay: 0.2s;
+    }
+    &:hover i {
+      visibility: visible !important;
+      transition-delay: 0.2s;
+    }
+    .card-image {
+      width: 70%;
+      height: 7 0%;
+      margin-top: 20px;
+      margin-left: 5%;
+      cursor: pointer;
+    }
+    .discount {
+      position: absolute;
+      border: 1px solid #2bbef9;
+      background-color: #2bbef9;
+      border-radius: 4px;
+      color: white;
+      display: flex;
+      margin-top: -130px;
+      margin-left: 15px;
+      font-size: 13px;
+      padding: 3px;
+      width: 35px;
+      p {
+        text-align: center;
+      }
+    }
+    .body {
+      margin-left: 10px;
+      .btn {
+        margin-left: 10px;
+      }
+      .second-price {
+        color: #ea2b0f;
+        font-size: 20px;
+      }
+      .a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+
+        font-family: Inter, sans-serif;
+        &:hover {
+          color: #233a95;
+        }
+      }
+      .price {
+        color: #6c757d;
+        text-decoration: line-through;
+      }
+      .yellows {
+        color: gold;
+        font-weight: 600;
+        font-size: 10px;
+      }
+      .gray {
+        color: gray;
+        font-weight: 600;
+        font-size: 10px;
+      }
+      .stock {
+        color: #28a745;
+        font-size: 10px;
+        font-weight: 700;
+      }
+      .btn {
+        visibility: hidden;
+        background-color: #233a95;
+        border-radius: 30px;
+        width: 90%;
+      }
+      .title {
+        font-size: 13px;
+        font-weight: 650;
+      }
+    }
+  }
 }
+
 .deal {
   position: relative;
   height: 750px;
@@ -894,99 +1016,6 @@ hr {
           }
         }
       }
-
-      .price {
-        display: flex;
-        margin-top: 8px;
-        del {
-          font-weight: 550;
-          opacity: 0.3;
-          font-size: 16px;
-        }
-        p {
-          margin-left: 14px;
-          font-weight: 540;
-          color: #ed174a;
-          font-size: 20px;
-          margin-top: -5px;
-        }
-        .av {
-          margin-left: 0;
-        }
-      }
-    }
-    .wishlist {
-      height: 40px;
-      width: 40px;
-      border: 1px solid rgba(0, 0, 0, 0.125);
-      position: absolute;
-      right: 20px;
-      top: 15%;
-      text-align: center;
-      border-radius: 50%;
-      display: none;
-      color: #233a95;
-      i {
-        margin-top: 11px;
-      }
-      &:hover {
-        background-color: #233a95;
-        color: white;
-      }
-    }
-    .arrows {
-      height: 40px;
-      width: 40px;
-      border: 1px solid rgba(0, 0, 0, 0.125);
-      position: absolute;
-      right: 20px;
-      top: 3%;
-      text-align: center;
-      border-radius: 50%;
-      display: none;
-      i {
-        margin-top: 17px;
-      }
-      &:hover {
-        background-color: #223a95;
-        color: white;
-      }
-    }
-    .active {
-      opacity: 0;
-      transition: all 1.5s;
-    }
-    &:hover {
-      height: 450px;
-      position: absolute;
-      z-index: 100;
-      transition: all 0.5s;      
-      border: 1px solid #233a95;
-    }
-    &:hover .wishlist {
-      display: block;
-    }
-    &:hover .active {
-      opacity: 1;
-    }
-    &:hover .arrows {
-      display: block;
-    }
-  }
-  .discount {
-    width: 50px;
-    height: 25px;
-    background-color: #2bbef9 !important;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 13px;
-    color: white;
-    align-items: center;
-    font-weight: 550;
-    margin-top: 20px;
-    position: absolute;
-    p {
-      padding-top: 3px;
     }
   }
 }
@@ -1272,6 +1301,7 @@ hr {
 }
 #second-product-container {
   margin-top: 50px;
+  
   .second-product-container {
     display: flex;
     flex-wrap: wrap;
@@ -1283,7 +1313,128 @@ hr {
       border-radius: 6px;
       
     }
-
+    .card-products {
+      &:hover {
+        box-shadow: 10px 5px 5px rgb(185, 185, 185);
+        border: 0.5px solid #233a95;
+        border-radius: 6px;
+      }
+      transition: all 0.5s;
+      width:18rem !important;
+      height: 30rem;
+      align-items: center;
+      border: 1px solid $border-color;
+      
+      .hidden-icon {
+        margin-top: 5px;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        i {
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          visibility: hidden;
+          margin-left: 220px;
+          line-height: 35px;
+          text-align: center;
+          align-items: center;
+          display: block;
+          transition: all 0.5s;
+          border-radius: 1px solid $border-color;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          padding-top: 5px;
+          &:hover {
+            background-color: rgb(19, 19, 91);
+            color: white;
+            transition-delay: 0.2s;
+          }
+        }
+      }
+      &:hover .btn {
+        visibility: visible !important;
+        transition-delay: 0.2s;
+      }
+      &:hover i {
+        visibility: visible !important;
+        transition-delay: 0.2s;
+      }
+      .card-image {
+        width: 70%;
+        height: 7 0%;
+        margin-top: 20px;
+        margin-left: 5%;
+        cursor: pointer;
+      }
+      .discount {
+        position: absolute;
+        border: 1px solid #2bbef9;
+        background-color: #2bbef9;
+        border-radius: 4px;
+        color: white;
+        display: flex;
+        margin-top: -130px;
+        margin-left: 15px;
+        font-size: 13px;
+        padding: 3px;
+        width: 35px;
+        p {
+          text-align: center;
+        }
+      }
+      .body {
+        margin-left: 10px;
+        .btn {
+          margin-left: 10px;
+        }
+        .second-price {
+          color: #ea2b0f;
+          font-size: 20px;
+        }
+        .a {
+          text-decoration: none;
+          color: black;
+          font-size: 14px;
+  
+          font-family: Inter, sans-serif;
+          &:hover {
+            color: #233a95;
+          }
+        }
+        .price {
+          color: #6c757d;
+          text-decoration: line-through;
+        }
+        .yellows {
+          color: gold;
+          font-weight: 600;
+          font-size: 10px;
+        }
+        .gray {
+          color: gray;
+          font-weight: 600;
+          font-size: 10px;
+        }
+        .stock {
+          color: #28a745;
+          font-size: 10px;
+          font-weight: 700;
+        }
+        .btn {
+          visibility: hidden;
+          background-color: #233a95;
+          border-radius: 30px;
+          width: 90%;
+        }
+        .title {
+          font-size: 13px;
+          font-weight: 650;
+        }
+      
+      }
+    }
     .card {
       height: 390px;
 
@@ -1355,7 +1506,6 @@ hr {
         text-align: center;
         border-radius: 50%;
         display: none;
-        color: #233a95;
         i {
           margin-top: 11px;
         }
