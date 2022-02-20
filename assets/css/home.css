@@ -1078,7 +1078,7 @@ hr {
   text-align: center;
   border-radius: 50%;
   display: none;
-  color: red;
+  color: #233a95;
 }
 
 .product-container .card .wishlist i {
@@ -1398,7 +1398,7 @@ hr {
   text-align: center;
   border-radius: 50%;
   display: none;
-  color: red;
+  color: #223a95;
 }
 
 #best-sellers .card .wishlist-icon i {
@@ -1589,7 +1589,7 @@ hr {
   text-align: center;
   border-radius: 50%;
   display: none;
-  color: red;
+  color: #233a95;
 }
 
 #second-product-container .second-product-container .card .wishlist-icon i {
